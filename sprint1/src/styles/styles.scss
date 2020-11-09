@@ -1,5 +1,5 @@
 
-@import "partials/mixins.scss";
+@import "./partials/mixins";
 
     $main-fontface: 'AvenirNext LT Pro';
 	$base-fontsize: 16px;
@@ -8,37 +8,37 @@
 // -----------------------------------------------------------------------
 
 // GENERAL ----------------------
-@import "partials/_general.scss";
+@import "./partials/general";
 // /END GENERAL ----------------
 
 
 // HEADER -------------------
-	@import "partials/_header.scss";
+	@import "./partials/header";
 // /END HEADER --------------
 
 
 // HERO ------------------------
-	@import "partials/_hero.scss";
+	@import "./partials/hero";
 // /END HERO -------------------
 
 
 // MAIN ----------------------
-	@import "partials/_main.scss";
+	@import "./partials/main";
 // /END MAIN -----------------
 
 
 // MAINTITLE & INTRO ------------
-	@import "partials/_intro.scss";
+	@import "./partials/intro";
 // / MAINTITLE & INTRO ----------
 
 
 // COMMENTS ----------------------
-	@import "partials/_comments.scss";
+	@import "./partials/comments";
 // /END COMMENTS ----------------
 
 
 // COMMENTS ------------------------
-	@import "partials/_sidevideos.scss";
+	@import "./partials/sidevideos";
 // /END COMMENTS -------------------
 
 
@@ -48,7 +48,7 @@
 	}
 
 	@media only screen and (min-width: 1440px) {
-		@import './partials/_desktop';
+		@import './partials/desktop';
 	}
 // / END MEDIA QUERIES ---------------------
 

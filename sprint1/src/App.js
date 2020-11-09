@@ -7,8 +7,10 @@ import IntroContent from './components/IntroContent.js';
 import Conversation from './components/Conversation.js';
 import CommentNum from './components/CommentNum.js';
 import Comments from './components/Comments.js';
-import Sidevideos from './components/Sidevideos.js';
+// import Sidevideos from './components/Sidevideos.js';
 // import Video from './components/Video.js';
+import VideoList from './components/VideoList.js';
+
 
 
 class App extends React.Component {
@@ -27,19 +29,61 @@ class App extends React.Component {
       comments: 'type of <array>' 
   },
 
-  sidevideos: [
+  videos: [
     {
     id: 1, 
-    title: 'type of <string>', 
-    channel: 'type of <string>', 
+    title: 'Become A Travel Pro In One Easy Lesson…', 
+    author: 'Scotty Cranmer', 
     image: './assets/Images/video-list-1.jpg' 
+  },
+  {
+    id: 2, 
+    title: 'Les Houches The Hidden Gem Of The…', 
+    author: 'Scotty Cranmer', 
+    image: './assets/Images/video-list-2.jpg' 
+  },
+  {
+    id: 3, 
+    title: 'Travel Health Useful Medical Information…', 
+    author: 'Scotty Cranmer', 
+    image: './assets/Images/video-list-3.jpg' 
+  },
+  {
+    id: 4, 
+    title: 'Cheap Airline Tickets Great Ways To Save', 
+    author: 'Emily Harper', 
+    image: './assets/Images/video-list-4.jpg' 
+  },
+  {
+    id: 5, 
+    title: 'Take A Romantic Break In A Boutique Hotel', 
+    author: 'Ethan Owen', 
+    image: './assets/Images/video-list-5.jpg' 
+  },
+  {
+    id: 6, 
+    title: 'Choose The Perfect Accommodations', 
+    author: 'Lydia Perez', 
+    image: './assets/Images/video-list-6.jpg' 
+  },
+  {
+    id: 7, 
+    title: 'Cruising Destination Ideas', 
+    author: 'Timothy Austin', 
+    image: './assets/Images/video-list-7.jpg' 
+  },
+  {
+    id: 8, 
+    title: 'Train Travel On Track For Safety', 
+    author: 'Scotty Cranmer', 
+    image: './assets/Images/video-list-8.jpg' 
   }
   ]
 }
+
   render(){
     return (
       <div className="App">
-
         <Header />
         <Hero />
         <main>
@@ -52,7 +96,9 @@ class App extends React.Component {
           </div>
 
           <div className="rightCol">
-          <Sidevideos sidevideos={this.state.sidevideos}/>
+          {/* <Sidevideos sidevideos={this.state.sidevideos}/> */}
+          <h3 className="marginFix">NEXT VIDEOS:</h3>
+          <VideoList videos={this.state.videos} />
           </div>
         </main>
 
@@ -61,6 +107,5 @@ class App extends React.Component {
   }
   
 }
-
 
 export default App;
