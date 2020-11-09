@@ -1,0 +1,54 @@
+
+.preIntro {
+ @include flexed-Column-AlignLeft;
+	border-bottom: 1px solid #E1E1E1;
+	margin-bottom: 1.5rem;
+}
+
+.mainTitle {
+	color: #000;
+	margin-bottom: 1rem;
+
+	h1 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.articleInfo, .stats {
+	display:flex;
+	justify-content: flex-start;
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.signature {
+	color: #000;
+	margin-right: 0.5rem;
+}
+
+.date {
+	color:#ccc;
+}
+
+.views {
+	padding-left: 1.875rem;
+	background-image: url(../assets/Icons/PNG/Icon-views.png);
+	background-repeat: no-repeat;
+	background-position: 3% 50%;
+	font-size: 0.875rem;
+	margin-right: 1.25rem;
+}
+
+.likes {
+	padding-left: 1.56rem;
+	background-image: url(../assets/Icons/PNG/Icon-likes.png);
+	background-repeat: no-repeat;
+	background-position: 3% 50%;
+	font-size: 0.875rem;
+}
+
+.intro {
+	line-height: 1.6rem;
+	margin-bottom: 2.5rem;
+}

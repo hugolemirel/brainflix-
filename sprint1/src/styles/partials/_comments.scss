@@ -1,0 +1,95 @@
+// Comments Section ------------------------------------
+	// Form *******************
+
+    .formSection {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .commentNum{
+        color:#323232;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    
+    .avatarCell {
+        width:15%;
+        padding-top: 1.8rem;
+    }
+    
+    .formCell {
+        display: flex;
+        flex-direction: column;
+        width:85%;
+        padding-left: 0.8rem;
+    
+        h3{
+            margin:0 0 0.5rem 0;
+            color: #ccc;
+        }
+    }
+    
+    input[type=text], textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 0px 0 15px 0;
+        border: 2px solid #ccc;
+        @include input; 
+      }
+    
+      textarea:focus {
+        @include inputFocus;
+      }
+    
+          //  /End Form *******************
+        //  /Comments *******************
+    
+      .conversContainer {
+        padding: 2rem 1rem 2rem 1rem;
+        width: 100%;
+        h1 {
+            margin-bottom: 0;
+            line-height: 2rem;
+        }
+    }
+    
+      .avatarCol {
+        @include flexed-hrztly-right;
+        width: 15%;
+        height: auto;
+        text-align: right;
+    }
+    
+    .innerConvers {
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        width: 100%;
+        margin-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #E1E1E1;
+    }
+    
+    .commentCol {
+        position: relative;
+        width: 85%;
+        padding-left:10px;
+    }
+    
+    .commentAuthor {
+        display: inline;
+        @include commentAuthor;
+    }
+    
+    .commentDate {
+        display: inline;
+        @include commentDate;
+    }
+    
+    .comment {
+        @include comment;
+    }
+        //  /Comments *******************
+    // / End Comments Section ------------------------------------

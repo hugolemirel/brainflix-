@@ -1,0 +1,17 @@
+// GENERAL -----------------------------------------
+
+/* Box-sizing border-box */
+* { -moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	// font-family: $main-fontface;
+	font-size: 16px;
+	color: #000;
+}
+// /END GENERAL -------------------------------------

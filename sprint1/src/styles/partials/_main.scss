@@ -1,0 +1,16 @@
+main {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 1rem;
+
+	h3{
+		margin:0 0 0.5rem 0;
+		color: #ccc;
+	}
+}
+
+.leftCol, .rightCol {
+	display: flex;
+	flex-direction: column;
+	width: 100%
+}

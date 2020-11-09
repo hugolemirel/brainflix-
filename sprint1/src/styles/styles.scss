@@ -1,0 +1,106 @@
+
+@import "partials/mixins.scss";
+
+    $main-fontface: 'AvenirNext LT Pro';
+	$base-fontsize: 16px;
+	
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+
+// GENERAL ----------------------
+@import "partials/_general.scss";
+// /END GENERAL ----------------
+
+
+// HEADER -------------------
+	@import "partials/_header.scss";
+// /END HEADER --------------
+
+
+// HERO ------------------------
+	@import "partials/_hero.scss";
+// /END HERO -------------------
+
+
+// MAIN ----------------------
+	@import "partials/_main.scss";
+// /END MAIN -----------------
+
+
+// MAINTITLE & INTRO ------------
+	@import "partials/_intro.scss";
+// / MAINTITLE & INTRO ----------
+
+
+// COMMENTS ----------------------
+	@import "partials/_comments.scss";
+// /END COMMENTS ----------------
+
+
+// COMMENTS ------------------------
+	@import "partials/_sidevideos.scss";
+// /END COMMENTS -------------------
+
+
+// MEDIA QUERIES -------------------------
+	@media only screen and (min-width: 768px) {
+		@import './partials/tablet';
+	}
+
+	@media only screen and (min-width: 1440px) {
+		@import './partials/_desktop';
+	}
+// / END MEDIA QUERIES ---------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
