@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles/styles.css';
 import Header from './components/Header.js';
 import Hero from './components/Hero.js';
 import Title from './components/Title.js';
@@ -8,7 +7,7 @@ import Conversation from './components/Conversation.js';
 import CommentNum from './components/CommentNum.js';
 import Comments from './components/Comments.js';
 // import Sidevideos from './components/Sidevideos.js';
-// import Video from './components/Video.js';
+import Video from './components/Video.js';
 import VideoList from './components/VideoList.js';
 
 
@@ -97,7 +96,7 @@ class App extends React.Component {
 
           <div className="rightCol">
           {/* <Sidevideos sidevideos={this.state.sidevideos}/> */}
-          <h3 className="marginFix">NEXT VIDEOS:</h3>
+          <h3 className="marginFix">NEXT VIDEOS</h3>
           <VideoList videos={this.state.videos} />
           </div>
         </main>

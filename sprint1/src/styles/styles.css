@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../assets/fonts/AvenirNextLTPro-It.woff") format("woff2");
+}
+
 /* Box-sizing border-box */
 * {
   -webkit-box-sizing: border-box;
@@ -7,7 +12,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "AvenirNext LT Pro";
   font-size: 16px;
   color: #000;
 }
@@ -210,11 +215,6 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2rem 1rem;
-}
-
-main h3 {
-  margin: 0 0 0.5rem 0;
-  color: green !important;
 }
 
 .leftCol, .rightCol {
@@ -494,6 +494,7 @@ textarea:focus {
 
 .marginFix {
   margin: 2.5rem 0;
+  color: #ccc;
 }
 
 @media only screen and (min-width: 768px) {

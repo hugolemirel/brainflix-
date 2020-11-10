@@ -1,4 +1,29 @@
 
+@font-face {
+	font-family: "AvenirNext LT Pro";
+    src: url('../assets/fonts/AvenirNextLTPro-Regular.woff2') format("woff2"),
+         url('../assets/fonts/AvenirNextLTPro-Regular.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "AvenirNext LT Pro";
+    src: url('../assets/fonts/AvenirNextLTPro-Bold.woff2') format("woff2"),
+         url('../assets/fonts/AvenirNextLTPro-Bold.woff') format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "AvenirNext LT Pro";
+    src: url('../assets/fonts/AvenirNextLTPro-Medium.woff2') format("woff2"),
+         url('../assets/fonts/AvenirNextLTPro-Medium.woff') format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+
 @import "./partials/mixins";
 
     $main-fontface: 'AvenirNext LT Pro';
@@ -6,6 +31,7 @@
 	
 // -----------------------------------------------------------------------
 // -----------------------------------------------------------------------
+
 
 // GENERAL ----------------------
 @import "./partials/general";
@@ -35,6 +61,7 @@
 // COMMENTS ----------------------
 	@import "./partials/comments";
 // /END COMMENTS ----------------
+
 
 
 // COMMENTS ------------------------

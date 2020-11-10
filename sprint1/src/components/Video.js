@@ -1,14 +1,14 @@
 import React from 'react'
 
-// function Video() {
-//     return (
-//         <section>
-//             <video controls>
-//   <source src="./assets/Video/BrainStation Smaple Video.mp4" type="video/mp4">
-//   Your browser does not support the video tag.
-// </video>
-//         </section>
-//     )
-// }
+function Video() {
+    return (
+        <div>
+            <video width="100%" height="100%"controls>
+                <source src="./assets/Video/BrainStation Sample Video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    )
+}
 
-// export default Video
+export default Video

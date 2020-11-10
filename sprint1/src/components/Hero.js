@@ -1,14 +1,13 @@
 import React from 'react'
-
-
+import Video from './Video.js'
 function Hero() {
     return (
         <div className="hero">
             <div className="videoPlayer">
-                <img src="../assets/Images/video-list-0.jpg" />
-                {/* <Video /> */}
+                {/* <img src="../assets/Images/video-list-0.jpg" /> */}
+                <Video /> 
 
-<div className="ctrlPlateCtnr">
+{/* <div className="ctrlPlateCtnr">
                 <div className="ctrlPlate">
                     <div className="videoIcons videoIcons__left">
                         <img src="./assets/Icons/PNG/Icon-play.png" />
@@ -21,7 +20,7 @@ function Hero() {
                     <img src="./assets/Icons/PNG/Icon-volume.png" />
                     </div>
                 </div>
-</div>
+</div> */}
 
             </div> 
         </div>
