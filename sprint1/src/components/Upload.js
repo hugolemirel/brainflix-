@@ -3,7 +3,7 @@ import React from 'react'
 function Upload() {
     return (
         <button className="uploadBtn">
-            <span>+</span>UPLOAD</button>
+            <span><img src="../../assets/Icons/PNG/Icon-upload.png" alt="Upload Icon"/></span>UPLOAD</button>
     );
 }
 

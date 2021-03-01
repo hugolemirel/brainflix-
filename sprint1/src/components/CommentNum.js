@@ -6,5 +6,4 @@ function CommentNum() {
     );
 }
 
-
 export default CommentNum;

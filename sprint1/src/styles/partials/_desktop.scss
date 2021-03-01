@@ -97,13 +97,15 @@ main {
 .leftCol {
 	display: flex;
 	flex-direction: row nowrap;
-	width: 75%;
+	width:712px;
+	border-right: 1px solid #CCC;
 }
 
 .rightCol {
 	display: flex;
 	flex-direction: column;
-	width: 25%;
+	width: 488px;
+	padding-left: 2rem;
 }
 
 
@@ -114,7 +116,15 @@ main {
 	margin-bottom: 1.5rem;
 }
 
+.stats {
+	padding-right: 1rem;
+}
 
+.intro {
+	max-width: 80%;
+	line-height: 1.6rem;
+	margin-bottom: 2.5rem;
+}
 
 //  /End Title & Intro Block -------------------------------
 

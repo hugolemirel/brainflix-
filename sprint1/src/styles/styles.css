@@ -1,6 +1,29 @@
 @font-face {
-  font-family: 'AvenirNext LT Pro';
-  src: url("../assets/fonts/AvenirNextLTPro-It.woff") format("woff2");
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../assets/fonts/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../assets/fonts/AvenirNextLTPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-Demi.woff2") format("woff2"), url("../assets/fonts/AvenirNextLTPro-Demi.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-Medium.woff2") format("woff2"), url("../assets/fonts/AvenirNextLTPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* Box-sizing border-box */
@@ -54,7 +77,7 @@ body {
   background-color: #F7F7F7;
   font-size: 0.9rem;
   margin: 0 0 0.5rem 0;
-  background-image: url(../assets/Icons/PNG/Icon-search.png);
+  background-image: url("../../assets/Icons/PNG/Icon-search.png");
   background-repeat: no-repeat;
   background-position: 3% 50%;
   font-size: 1rem;
@@ -91,6 +114,7 @@ body {
 .uploadBtn span {
   margin-right: 0.5rem;
   font-size: 2rem;
+  margin-top: -10px;
 }
 
 .uploadBlock {
@@ -251,6 +275,7 @@ main {
 .mainTitle h1 {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 900;
 }
 
 .articleInfo, .stats {
@@ -275,7 +300,7 @@ main {
 
 .views {
   padding-left: 1.875rem;
-  background-image: url(../assets/Icons/PNG/Icon-views.png);
+  background-image: url("../../assets/Icons/PNG/Icon-views.png");
   background-repeat: no-repeat;
   background-position: 3% 50%;
   font-size: 0.875rem;
@@ -284,7 +309,7 @@ main {
 
 .likes {
   padding-left: 1.56rem;
-  background-image: url(../assets/Icons/PNG/Icon-likes.png);
+  background-image: url("../../assets/Icons/PNG/Icon-likes.png");
   background-repeat: no-repeat;
   background-position: 3% 50%;
   font-size: 0.875rem;
@@ -345,6 +370,19 @@ input[type=text], textarea {
   font-family: "AvenirNext LT Pro";
   font-size: 1rem;
   resize: none;
+}
+
+input[type=submit] {
+  background-color: #0095FF;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 1rem 0 1rem;
+  height: 54px;
 }
 
 textarea:focus {
@@ -446,8 +484,17 @@ textarea:focus {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style-type: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   position: relative;
+}
+
+.videoListBtn {
+  display: block;
+  margin-bottom: 2px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .video-list_rightCol {
@@ -479,7 +526,8 @@ textarea:focus {
           flex-direction: column;
   list-style-type: none;
   margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: 500;
+  text-align: left;
 }
 
 .video-list__author {
@@ -868,7 +916,8 @@ textarea:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: row nowrap;
             flex-direction: row nowrap;
-    width: 75%;
+    width: 712px;
+    border-right: 1px solid #CCC;
   }
   .rightCol {
     display: -webkit-box;
@@ -878,11 +927,20 @@ textarea:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 25%;
+    width: 488px;
+    padding-left: 2rem;
   }
   .preIntro {
     border-bottom: 2px solid #E1E1E1;
     margin-bottom: 1.5rem;
+  }
+  .stats {
+    padding-right: 1rem;
+  }
+  .intro {
+    max-width: 80%;
+    line-height: 1.6rem;
+    margin-bottom: 2.5rem;
   }
   .formSection, .formCell, .preIntro, .intro, .innerConvers {
     width: 44.5rem;

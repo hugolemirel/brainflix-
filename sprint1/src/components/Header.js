@@ -4,7 +4,7 @@ import Upload from './Upload.js';
 import Avatar from './Avatar.js';
 
 function Header() {
-    return(
+    return (
       <header className="header"> 
         <Logo />
         <Search />
@@ -15,7 +15,5 @@ function Header() {
     </header> 
     );
   }
-
-  
 
   export default Header;

@@ -1,0 +1,12 @@
+main {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 1rem;
+}
+
+
+.leftCol, .rightCol {
+	display: flex;
+	flex-direction: column;
+	width: 100%
+}

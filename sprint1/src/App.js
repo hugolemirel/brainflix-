@@ -1,110 +1,98 @@
 import React from 'react';
-import Header from './components/Header.js';
-import Hero from './components/Hero.js';
-import Title from './components/Title.js';
-import IntroContent from './components/IntroContent.js';
-import Conversation from './components/Conversation.js';
-import CommentNum from './components/CommentNum.js';
-import Comments from './components/Comments.js';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Title from './components/Title';
+import IntroContent from './components/IntroContent';
+import Conversation from './components/Conversation';
+import CommentNum from './components/CommentNum';
+import Comments from './components/Comments';
 // import Sidevideos from './components/Sidevideos.js';
-import Video from './components/Video.js';
-import VideoList from './components/VideoList.js';
-
+// import Video from './components/Video.js';
+import VideoList from './components/VideoList';
+import videoData from './data/videoData.json';
+// import commentsData from './data/commentsData.json';
 
 
 class App extends React.Component {
   state = {
-    mainVideo: {
-      id: 'type of <string>',
-      title: 'BMX Rampage: 2018 Highlights',
-      description: 'type of <string>',
-      channel: 'type of <string>',
-      image: 'type of <string>',
-      views: 'type of <string>',
-      likes: 'type of <string>',
-      duration: 'type of <string>',
-      video: 'type of <string>',
-      timestamp: 'type of <number>',
-      comments: 'type of <array>' 
-  },
+    videos: videoData,
+    currentVideo: videoData[3],
+    comments: [
+      { id:1, 
+        content:"They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.", 
+        author:"Author #1", 
+        date:"02/13/2021"
+      },
 
-  videos: [
-    {
-    id: 1, 
-    title: 'Become A Travel Pro In One Easy Lesson…', 
-    author: 'Scotty Cranmer', 
-    image: './assets/Images/video-list-1.jpg' 
-  },
-  {
-    id: 2, 
-    title: 'Les Houches The Hidden Gem Of The…', 
-    author: 'Scotty Cranmer', 
-    image: './assets/Images/video-list-2.jpg' 
-  },
-  {
-    id: 3, 
-    title: 'Travel Health Useful Medical Information…', 
-    author: 'Scotty Cranmer', 
-    image: './assets/Images/video-list-3.jpg' 
-  },
-  {
-    id: 4, 
-    title: 'Cheap Airline Tickets Great Ways To Save', 
-    author: 'Emily Harper', 
-    image: './assets/Images/video-list-4.jpg' 
-  },
-  {
-    id: 5, 
-    title: 'Take A Romantic Break In A Boutique Hotel', 
-    author: 'Ethan Owen', 
-    image: './assets/Images/video-list-5.jpg' 
-  },
-  {
-    id: 6, 
-    title: 'Choose The Perfect Accommodations', 
-    author: 'Lydia Perez', 
-    image: './assets/Images/video-list-6.jpg' 
-  },
-  {
-    id: 7, 
-    title: 'Cruising Destination Ideas', 
-    author: 'Timothy Austin', 
-    image: './assets/Images/video-list-7.jpg' 
-  },
-  {
-    id: 8, 
-    title: 'Train Travel On Track For Safety', 
-    author: 'Scotty Cranmer', 
-    image: './assets/Images/video-list-8.jpg' 
+      { id:2, 
+        content:"They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.", 
+        author:"Author #2", 
+        date:"02/13/2021"
+      },
+
+      { id:3, 
+        content:"How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!", 
+        author:"Author #3", 
+        date:"02/13/2021"
+      }
+    ]
+  };
+
+  addComment = (event) => {
+    event.preventDefault();
+
+    const item = {
+      id: Math.random() * 999999,
+      content: event.target.message.value,
+      date:"02/13/2021",
+    }
+   
+    this.setState(
+      {comments: [...this.state.comments, item]}
+    )
+
+    event.target.reset();
   }
-  ]
-}
 
-  render(){
+  handleSelectVideo = (id) => {
+    const calledVideo = videoData.find ((video) => video.id === id);
+
+    this.setState({
+      currentVideo: calledVideo
+    });
+  };
+
+  render() {
+    const filteredVideo = this.state.videos.filter((video) => video.id !== this.state.currentVideo.id);
+
     return (
       <div className="App">
         <Header />
-        <Hero />
+        <Hero currentVideo={this.state.currentVideo}/>
+    
         <main>
           <div className="leftCol">
-          <Title mainVideo={this.state.mainVideo}/>
-          <IntroContent />
+          <Title currentVideo={this.state.currentVideo}/>
+          <IntroContent currentVideo={this.state.currentVideo}/>
           <CommentNum />
-          <Conversation />
+          <Conversation submitHandler={this.addComment} />
+          <ol>
+            {this.state.comments.map(item => {
+              return (<li>{item.content}</li>)
+            })}
+            </ol>
+
           <Comments />
           </div>
 
           <div className="rightCol">
-          {/* <Sidevideos sidevideos={this.state.sidevideos}/> */}
           <h3 className="marginFix">NEXT VIDEOS</h3>
-          <VideoList videos={this.state.videos} />
+          <VideoList videos={filteredVideo} selectVideo={this.handleSelectVideo} />
           </div>
         </main>
-
       </div>
     );
-  }
-  
+  } 
 }
 
 export default App;
