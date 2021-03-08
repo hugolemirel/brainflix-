@@ -7,7 +7,7 @@ import Conversation from './components/Conversation';
 import CommentNum from './components/CommentNum';
 import Comments from './components/Comments';
 // import Sidevideos from './components/Sidevideos.js';
-// import Video from './components/Video.js';
+import Video from './components/Video.js';
 import VideoList from './components/VideoList';
 import videoData from './data/videoData.json';
 // import commentsData from './data/commentsData.json';
@@ -68,7 +68,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <Hero currentVideo={this.state.currentVideo}/>
+        <Hero currentVideo={this.state.currentVideo} />
     
         <main>
           <div className="leftCol">
@@ -76,11 +76,11 @@ class App extends React.Component {
           <IntroContent currentVideo={this.state.currentVideo}/>
           <CommentNum />
           <Conversation submitHandler={this.addComment} />
-          <ol>
+          <ul>
             {this.state.comments.map(item => {
               return (<li>{item.content}</li>)
             })}
-            </ol>
+            </ul>
 
           <Comments />
           </div>

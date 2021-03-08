@@ -5,7 +5,7 @@ function Hero() {
     return (
         <div className="hero">
             <div className="videoPlayer">
-                <Video /> 
+                <Video/> 
             </div> 
         </div>
     );

@@ -1,0 +1,174 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	width: 1200px;
+	height: 5rem;
+	padding: 1.2rem 1rem 1rem 1rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	&__logo {
+		margin-right: 31.812rem;
+	}
+	
+	input[type=text] {
+		width: 100%;
+		padding: 0.75rem 2rem;
+	}
+}
+ 
+.search {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 18.75rem;
+	margin-right: 0;
+}
+
+.uploadBtn{
+	width: 7.5rem;
+	height: 3.375rem;
+	padding: 0.5rem 0rem 0.5 2rem;
+	margin-left: 0;
+	margin-right: 1.5rem;
+}
+
+.uploadBlock {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: auto;
+}
+
+.avatar img {
+	margin-left: 1.5rem;
+}
+
+// / End Header ------------------------------------
+
+
+// Hero ------------------------------------
+
+.hero {
+    width: 100%;
+	height: 540px;
+}
+
+.videoPlayer{
+	background-color: black;
+	width: 59rem;
+	height: 33.75rem;
+
+	img{
+		height: 540px;
+	}
+}
+
+.ctrlPlate {
+	display: flex;
+	width: 100%;
+	margin-bottom: 0.5rem;
+
+	img{
+		width: 100%;
+		height: 100%;
+		margin-right: 5px;
+		margin-left: 5px;
+		object-fit: scale-down;
+	}
+}
+
+.videoIcons {
+	 &__center {
+		width: 46.93rem;
+		margin: 0 0.5rem;
+	 }
+}
+
+// / End Hero ------------------------------------
+
+main {
+	display: flex;
+	flex-direction: row;
+	width: 1200px;
+	padding: 2rem 1rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.leftCol {
+	display: flex;
+	flex-direction: row nowrap;
+	width:712px;
+	border-right: 1px solid #CCC;
+}
+
+.rightCol {
+	display: flex;
+	flex-direction: column;
+	width: 488px;
+	padding-left: 2rem;
+}
+
+
+//  Title & Intro Block -------------------------------
+
+.preIntro {
+	border-bottom: 2px solid #E1E1E1;
+	margin-bottom: 1.5rem;
+}
+
+.stats {
+	padding-right: 1rem;
+}
+
+.intro {
+	max-width: 80%;
+	line-height: 1.6rem;
+	margin-bottom: 2.5rem;
+}
+
+//  /End Title & Intro Block -------------------------------
+
+
+// Comments Section ------------------------------------
+	// Form *******************
+.formSection, .formCell, .preIntro, .intro, .innerConvers {
+	width: 44.5rem;
+}
+
+.formSection {
+	border-bottom: 1px solid #E1E1E1;
+}
+	
+.avatarCell {
+	width: auto;
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+
+		.uploadBtn {
+			width: 10rem;
+			color: #fff;
+			margin: 0 1.5rem;
+			padding: 0;
+		}
+	}
+	
+input[type=text], textarea {
+	width: 27,25rem;
+	}
+	//  /End Form ******************* 
+ //  /Comments *******************
+	
+.avatarCol {
+	width: auto;
+	height: auto;
+	}
+		//  /Comments *******************
+// / End Comments Section ------------------------------------
+
