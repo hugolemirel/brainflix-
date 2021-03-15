@@ -1,0 +1,53 @@
+
+
+h1 {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upldPanel {        //wrapper
+    display:flex;
+    flex-direction: row;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.videothumb {        // left div insde wrapper
+    width: 21.5rem;
+    margin-bottom: 1rem;
+
+    img {
+      width: 344px;
+      height: auto;
+      border-radius: 5px;
+    }
+  }
+
+  .upldForm{        // right div insde wrapper
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 1.5rem; 
+  }
+
+
+.input1, .input2{
+    min-width: 800px;
+}
+
+
+  input[type="text"],
+  .textarea {
+    background-color: #FAFAFA;
+    width: 100%;
+    border: 1px solid #E1E1E1;
+}
+
+.publish {
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content: flex-start;
+}
+

@@ -1,0 +1,28 @@
+[
+    {
+        "commentId": "comm001",
+        "date" : "02/23/2021",
+        "avatar": "https://i.pinimg.com/originals/0a/dd/87/0add874e1ea0676c4365b2dd7ddd32e3.jpg",
+        "author": "author01",
+
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi quis eleifend quam. Adipiscing tristique risus nec feugiat in fermentum posuere urna nec"
+    },
+
+    {
+        "commentId": "comm002",
+        "date" : "02/24/2021",
+        "avatar": "https://i.pinimg.com/originals/0a/dd/87/0add874e1ea0676c4365b2dd7ddd32e3.jpg",
+        "author": "author01",
+
+        "content": "Amet mauris commodo quis imperdiet. Facilisis volutpat est velit egestas dui. Faucibus turpis in eu mi. Auctor augue mauris augue neque gravida in. Enim ut sem viverra aliquet eget sit. Viverra aliquet eget sit amet tellus cras adipiscing enim."
+    },
+
+    {
+        "commentId": "comm003",
+        "date" : "02/25/2021",
+        "avatar": "https://i.pinimg.com/originals/0a/dd/87/0add874e1ea0676c4365b2dd7ddd32e3.jpg",
+        "author": "author01",
+
+        "content": "Ut venenatis tellus in metus vulputate eu scelerisque. Ultrices eros in cursus turpis massa tincidunt dui. Non arcu risus quis varius quam. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis."
+    }
+]

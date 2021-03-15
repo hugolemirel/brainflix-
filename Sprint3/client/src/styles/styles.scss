@@ -1,0 +1,134 @@
+
+@font-face {
+	font-family: "AvenirNext LT Pro";
+    src: url('../assets/fonts/AvenirNextLTPro-Regular.woff2') format("woff2"),
+         url('../assets/fonts/AvenirNextLTPro-Regular.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "AvenirNext LT Pro";
+    src: url('../assets/fonts/AvenirNextLTPro-Bold.woff2') format("woff2"),
+         url('../assets/fonts/AvenirNextLTPro-Bold.woff') format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "AvenirNext LT Pro";
+    src: url('../assets/fonts/AvenirNextLTPro-Demi.woff2') format("woff2"),
+         url('../assets/fonts/AvenirNextLTPro-Demi.woff') format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+	font-family: "AvenirNext LT Pro";
+    src: url('../assets/fonts/AvenirNextLTPro-Medium.woff2') format("woff2"),
+         url('../assets/fonts/AvenirNextLTPro-Medium.woff') format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@import "./partials/mixins";
+
+    $main-fontface: 'AvenirNext LT Pro';
+	$base-fontsize: 16px;
+	
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+
+
+// GENERAL ---------------------
+@import "./partials/general";
+// /END GENERAL ----------------
+
+// HEADER ----------------------
+	@import "./partials/header";
+// /END HEADER -----------------
+
+// HERO ------------------------
+	@import "./partials/hero";
+// /END HERO -------------------
+
+// MAIN ------------------------
+	@import "./partials/main";
+// /END MAIN -------------------
+
+// MAINTITLE & INTRO -----------
+	@import "./partials/intro";
+// / MAINTITLE & INTRO ---------
+
+// COMMENTS ----------------------
+	@import "./partials/comments";
+// /END COMMENTS -----------------
+
+// COMMENTS ------------------------
+	@import "./partials/sidevideos";
+// /END COMMENTS -------------------
+
+
+// MEDIA QUERIES --------------------------------
+	@media only screen and (min-width: 768px) {
+		@import './partials/tablet';
+	}
+
+	@media only screen and (min-width: 1280px) {
+		@import './partials/desktop';
+	}
+// / END MEDIA QUERIES ---------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+h1 {
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.videothumb {
+    width: 100%;
+    margin-bottom: 1rem;
+  
+    img {
+      width: 344px;
+      height: auto;
+      border-radius: 5px;
+    }
+  }
+
+  .upldPanel {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top: 1px solid #E1E1E1;
+    padding: 40px 0 32px 0;
+    }
+
+  .upldForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .textarea {
+    height: 120px;
+    padding-bottom: 0;
+    margin-bottom:0;
+  }
+
+  .uploadBtn{
+	  height: 54px;
+    padding: 1rem 1rem;
+	  letter-spacing: 0.2em;
+
+	span {
+		margin-right: 0.5rem;
+		font-size: 2rem;
+		margin-top: -10px;
+	}
+}
+
+.publish{
+    display:flex;
+    flex-direction:row-reverse;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #E1E1E1;
+}
+
+.publishBtn {
+    width: 160px;
+    margin-top: 0;
+
+}
+
+.cancel {
+  margin-right: 48px;
+}
+
+input[type=submit] {
+  width:160px;
+  margin: 0 40px 0 20px;
+}

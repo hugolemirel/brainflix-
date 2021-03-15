@@ -1,0 +1,249 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem 1.5rem;
+  border-top: 1px solid #E1E1E1;
+}
+
+.main h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.main h4 {
+  color: #b8b8b8;
+  font-weight: 100;
+  margin-bottom: 0.3rem;
+}
+
+.upldPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.videothumb {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.videothumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.formWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.upldForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.uploadBtn {
+  width: 100%;
+  height: 54px;
+  letter-spacing: 0.2em;
+}
+
+.publishBtn {
+  width: 100%;
+  height: 54px;
+  letter-spacing: 0.2em;
+  background-color: #0095ff;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+input[type=text],
+.textarea {
+  background-color: #FAFAFA;
+  width: 100%;
+  border: 1px solid #E1E1E1;
+}
+
+input[type=submit] {
+  width: 100%;
+  margin-left: 0;
+}
+
+.cancel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #0095ff;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .videothumb {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .videothumb img {
+    width: 344px;
+    height: auto;
+    border-radius: 5px;
+  }
+  .upldPanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-top: 1px solid #E1E1E1;
+    padding: 40px 0 32px 0;
+  }
+  .upldForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .textarea {
+    height: 120px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .uploadBtn {
+    height: 54px;
+    padding: 1rem 1rem;
+    letter-spacing: 0.2em;
+  }
+  .uploadBtn span {
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    margin-top: -10px;
+  }
+  .publish {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #E1E1E1;
+  }
+  .publishBtn {
+    width: 160px;
+    margin-top: 0;
+  }
+  .cancel {
+    margin-right: 48px;
+  }
+  input[type=submit] {
+    width: 160px;
+    margin: 0 40px 0 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  h1 {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .upldPanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .videothumb {
+    width: 21.5rem;
+    margin-bottom: 1rem;
+  }
+  .videothumb img {
+    width: 344px;
+    height: auto;
+    border-radius: 5px;
+  }
+  .upldForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-left: 1.5rem;
+  }
+  .input1, .input2 {
+    min-width: 800px;
+  }
+  input[type="text"],
+  .textarea {
+    background-color: #FAFAFA;
+    width: 100%;
+    border: 1px solid #E1E1E1;
+  }
+  .publish {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+/*# sourceMappingURL=upload-styles.css.map */

@@ -1,0 +1,83 @@
+
+@mixin flexed-Column-AlignLeft {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+@mixin flexed-hrztly-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+@mixin flexed-Column-Centered {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+
+@mixin flexed-Row-Centered {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin input {
+    border-radius: 4px;
+    background-color: #F7F7F7;
+    outline: none;
+    font-family: $main-fontface;
+    font-size: 1rem;
+    resize: none; //only for textarea 
+}
+
+@mixin inputFocus {
+    border: 2px solid #0095FF;
+}
+
+@mixin uploadBtn {
+    background-color:#0095FF;
+	padding: 0.875rem 2rem;
+	border: none;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 600;
+    margin: 0 1rem 0 0;
+}
+
+@mixin avatar {
+    border: 2px solid #E0E0E0;
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    margin-right: 0.5rem;
+    }
+
+@mixin commentAuthor {
+    width: 65%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #323232;
+}
+
+@mixin commentDate {
+    height: auto;
+    margin-top: 1px;
+    width: 35%;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: right;
+    position: absolute;
+    right: 0;
+}
+
+@mixin comment {
+    height: auto;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;;
+}
